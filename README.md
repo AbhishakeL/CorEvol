@@ -1,6 +1,6 @@
 # CorEvol
 
-CorEvol is a lightweight Python pipeline to calculate ω (dN/dS) values for the core genome of multiple genomic CDS sequences. The general workflow is described in the flowchart below.
+CorEvol is a lightweight Python pipeline to calculate ω (dN/dS) values for the core genome of multiple genomic CDS sequences of closely related micro-organisms. The general workflow is described in the flowchart below.
 
 ## Table of Contents
 - [General Info](#general-info)
@@ -113,7 +113,7 @@ The output folder contains the following files and folders.
 | Recombination_Clusters | Directory | A directory containing `_results.csv : Recombination detection output file` for each of the clusters where recombination is detected|
 | concatenated_seq.aln | File | ClustalW format alignment file for all the core, non-redundant, non-recombinant sequences, joined end to end | 
 | concatenated_seq.fas | File | FASTA format alignment file for all the core, non-redundant, non-recombinant sequences, joined end to end | 
-| Pan_matrix.xlsx | File | CD-HIT output, gnerated in amtrix format such that each row represent Cluster number and each column represent each sample. Background color of each row selected such that green represent ω >= 1,blue represent ω = 0, red represent ω < 1. Those without color are non-core/recombinant clusters|
+| Pan_matrix.xlsx | File | CD-HIT output, generated in a matrix format such that each row represent Cluster number and each column represent each sample. Background color of each row selected such that green represent ω >= 1,blue represent ω = 0, red represent ω < 1. Those without color are non-core/recombinant clusters|
 | RDP_error.tsv | File | Cluster numbers for which Recombination could not be detected because there were less than three unique sequences in the cluster |
 | Selection_table.tsv | File | A matrix with ω value for the clusters |
 
