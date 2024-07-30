@@ -33,9 +33,8 @@ The latest version of CorEvol is available [here](https://github.com/AbhishakeL/
 
 1. Create a conda environment.
 ```
-conda create -n CorEvol -c conda-forge h5py==3.8.0 numpy scipy
+conda create -n CorEvol -c conda-forge h5py==3.8.0 numpy scipy python=3.10
 conda activate CorEvol
-
 ```
 2. Install OpenRDP in the said environment. Find details [here](https://github.com/PoonLab/OpenRDP/tree/master)
 ```
