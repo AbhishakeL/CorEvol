@@ -30,24 +30,27 @@ graph LR
 ## Installation
 The latest version of CorEvol is available [here](https://github.com/AbhishakeL/CorEvol)
 
-### Dummy installation
+
 1. Create a conda environment.
 ```
-conda create -n corevol_env python=3.8
-conda activate corevol_env
+conda create -n CorEvol -c conda-forge h5py==3.8.0 numpy scipy
+conda activate CorEvol
+
 ```
-2. Install OpenRDP in the said environment.
+2. Install OpenRDP in the said environment. Find details [here](https://github.com/PoonLab/OpenRDP/tree/master)
 ```
-conda install -c bioconda openrdp
+git clone https://github.com/PoonLab/OpenRDP
+cd OpenRDP/
+pip3 install -e .
+cd ..
 ```
-3. Clone the CorEvol repository.
+3. Install SPYDER in the said environment.
 ```
-git clone https://github.com/AbhishakeL/CorEvol.git
-cd corevol
+conda install anaconda::spyder
 ```
-5. Install required Python packages.
+5. Install CorEvol.
 ```
-pip install -r requirements.txt
+conda install abhishakel::corevol
 ```
 ## Usage
 To use CorEvol, run the following command to get to know of all the available parameters and options:
